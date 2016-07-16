@@ -3,8 +3,10 @@ package br.com.tools.treinamento;
 import java.io.Serializable;
 import java.math.BigDecimal;
 
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
+@Remote
 @Stateless
 public class CalculadoraRemotaService implements Serializable {
 
