@@ -19,5 +19,5 @@ public class SomaTest {
 		CalculadoraRemotaService service = new CalculadoraRemotaService();
 		service.somar(null, BigDecimal.TEN);
 	}
-
+	
 }
