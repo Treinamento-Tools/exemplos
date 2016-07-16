@@ -1,8 +1,5 @@
-import java.io.Serializable;
-
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
-import javax.jws.WebMethod;
 
 @Remote
 @Stateless
@@ -17,14 +14,7 @@ public class Calculadora implements CalculadoraInterface {
 		return Math.atan(valor);
 		}
  
- public double raizRound(int valor){		
+ public double raizRound(int valor){	
 		return Math.round(valor);
 		}
-	
-	public static void main(String[] args) {
-		Calculadora c = new Calculadora();
-		System.out.print(c.raizQuadrada(4));
-
-	}
-
 }
