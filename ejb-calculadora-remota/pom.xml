@@ -37,7 +37,7 @@
 				<version>2.19.1</version>
 				<configuration>
 					<includes>
-						<include>**/*Test.java</include>
+						<include>br.com.tools.treinamento.test.*</include>
 					</includes>
 				</configuration>
 			</plugin>
