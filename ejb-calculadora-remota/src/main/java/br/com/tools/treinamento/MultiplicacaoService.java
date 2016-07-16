@@ -14,4 +14,8 @@ public class MultiplicacaoService implements Serializable {
 		return multiplicando * multiplicador;
 	}
 
+	public double multiplicar(double multiplicando, double multiplicador) {
+		return multiplicando * multiplicador;
+	}
+
 }
