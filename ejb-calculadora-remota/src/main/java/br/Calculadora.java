@@ -1,3 +1,4 @@
+package br;
 import java.io.Serializable;
 
 import javax.ejb.Remote;
