@@ -1,7 +1,9 @@
 package calculation;
+import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 @Stateless
+@Remote
 public class Calculator {
 
 	public int round(float value) {		
