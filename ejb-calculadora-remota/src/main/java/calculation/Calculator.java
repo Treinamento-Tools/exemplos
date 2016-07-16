@@ -1,18 +1,37 @@
 package calculation;
+import java.io.Serializable;
+
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 @Stateless
 @Remote
-public class Calculator {
+public class Calculator implements Serializable {
 
-	public int round(float value) {		
-		return Math.round(value);
+	private static final long serialVersionUID = 1L;
+
+	public int round(float value) {	
+		int result = 0;
+		try {
+			result = Math.round(value);			
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		return result;
 	}
 	
 	public long round(double value) {		
-		return Math.round(value);
+		long result = 0;
+		try {
+			result = Math.round(value);
+		} catch (Exception e){
+			e.printStackTrace();
+		}
+		
+		return result;
 	}
+	
 
 }
 
