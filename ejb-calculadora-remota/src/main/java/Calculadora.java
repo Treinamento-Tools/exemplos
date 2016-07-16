@@ -13,6 +13,13 @@ public class Calculadora implements CalculadoraInterface {
 		return Math.sqrt(valor);
 		}
 	
+ public double raizAtan(int valor){		
+		return Math.atan(valor);
+		}
+ 
+ public double raizRound(int valor){		
+		return Math.round(valor);
+		}
 	
 	public static void main(String[] args) {
 		Calculadora c = new Calculadora();
