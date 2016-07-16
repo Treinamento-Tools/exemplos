@@ -1,9 +1,11 @@
+import java.io.Serializable;
+
 import javax.ejb.Remote;
 import javax.ejb.Stateless;
 
 @Remote
 @Stateless
-public class Calculadora implements CalculadoraInterface {
+public class Calculadora implements Serializable {
 
 
  public double raizQuadrada(int valor){		
